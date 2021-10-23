@@ -20,29 +20,31 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <!--  header -->
   <body>
-    <!--  section  header -->
+    <!-----------------------------------  section  header ------------------------------->
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
+        <!--header__container-->
+        <a class="header__logo-link link" href="./index.html"
+          ><span class="header__logo-span">Web</span>Studio
+        </a>
         <nav class="nav">
-          <a class="header-logo link" href="./index.html"
-            ><span class="span-logo">Web</span>Studio
-          </a>
-          <ul class="header-list list">
-            <li class="header-item">
-              <a class="header-link link" href="./index.html">Студия</a>
+          <ul class="nav-menu__list list">
+            <li>
+              <a class="nav-menu__link link" href="./index.html">Студия</a>
             </li>
-            <li class="header-item">
-              <a class="activ-page link" href="./portfolio.html">Портфолио</a>
+            <li>
+              <a class="nav-menu__link--current link" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="./contacts.html">Контакты</a>
+            <li>
+              <a class="nav-menu__link link" href="./contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="auth-nav list">
-          <li class="auth-item">
+        <ul class="nav-contact list">
+          <li class="nav-contact__item">
             <a class="header-contact link" href="mailto:info@devstudio.com">
               <svg class="icon-contact" width="16" height="12">
                 <use href="./images/symbol-defs.svg#mail-icon"></use>
@@ -50,7 +52,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="auth-item">
+          <li class="nav-contact__item">
             <a class="header-contact link" href="tel:+380961111111">
               <svg class="icon-contact" width="10px" height="16px">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>

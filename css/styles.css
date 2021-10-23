@@ -513,7 +513,7 @@ ul {
   background-color: var(--primary-title-color);
 }
 
-.about-activiti {
+.activiti__topic {
   text-align: center;
   font-weight: bold;
   font-size: 36px;
@@ -522,15 +522,15 @@ ul {
   margin-bottom: 50px;
 }
 
-.activiti-list {
+.activiti__list {
   display: flex;
 }
 
-.activiti-list .activiti-item + .activiti-item {
+.activiti__list .activiti__item + .activiti__item {
   margin-left: 30px;
 }
 
-.activiti-block {
+.activiti__block {
   position: relative;
 }
 

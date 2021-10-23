@@ -561,7 +561,7 @@ ul {
   background-color: var(--secondary-background-color);
 }
 
-.tittle-team {
+.team__topic {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;

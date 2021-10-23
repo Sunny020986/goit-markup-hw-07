@@ -97,7 +97,7 @@ ul {
   margin-right: 50px;
 }
 
-.header-logo {
+.header__logo-link {
   font-weight: 700;
   font-family: Raleway;
   font-weight: bold;
@@ -108,7 +108,7 @@ ul {
   padding-bottom: 25px;
 }
 
-.span-logo {
+.header__span-logo {
   color: var(--accent-color);
 }
 

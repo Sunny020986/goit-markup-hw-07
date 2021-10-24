@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!------------------------------------- section  header ------------------------------->
+    <!--------------------------------------------- section  header ------------------------------->
     <header class="header">
       <div class="header-container container">
         <a class="header__logo-link link" href="./index.html"
@@ -76,8 +76,7 @@
         </div>
       </section>
 
-      <!------------------------------------------ benefits section ---------------------->
-      <!--benefits пустой клас может быть блоком? -->
+      <!------------------------------------------- benefits section ---------------------->
       <section class="benefits section">
         <div class="container">
           <h2 hidden>Преимущества</h2>
@@ -134,7 +133,7 @@
         </div>
       </section>
 
-      <!-------------------------------------------- activiti section --------------------->
+      <!------------------------------------------- activiti section --------------------->
       <section class="activiti">
         <div class="container">
           <h2 class="activiti__topic">Чем мы занимаемся</h2>
@@ -394,7 +393,7 @@
         </div>
       </section>
 
-      <!---------------------------------------------  clients section  ------------------->
+      <!------------------------------------------  clients section  ------------------->
       <section class="clients section">
         <div class="container">
           <h2 class="clients__topic">Постоянные клиенты</h2>
@@ -446,7 +445,7 @@
       </section>
     </main>
 
-    <!------------------------------------------- footer --------------------------------->
+    <!--------------------------------------------- footer --------------------------------->
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__block">
@@ -481,49 +480,47 @@
           <strong class="footer__topic">присоединяйтесь</strong>
           <ul class="footer__list--social list">
             <li class="footer__social">
-              <a href="" class="footer-link-social">
-                <svg class="footer-icon-social" width="20" height="20">
+              <a href="" class="footer__link">
+                <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social">
-              <a href="" class="footer-link-social">
-                <svg class="footer-icon-social" width="20" height="20">
+              <a href="" class="footer__link">
+                <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social">
-              <a href="" class="footer-link-social">
-                <svg class="footer-icon-social" width="20" height="20">
+              <a href="" class="footer__link">
+                <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social">
-              <a href="" class="footer-link-social">
-                <svg class="footer-icon-social" width="20" height="20">
+              <a href="" class="footer__link">
+                <svg class="footer__icon">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe-container">
-          <strong class="footer-tittle-subscribe"
-            >подпишитесь на рассылку</strong
-          >
-          <form class="footer-form" method="get" autocomplete="on">
+        <div class="footer__subscribe">
+          <strong class="footer__tittle">подпишитесь на рассылку</strong>
+          <form class="footer__form" method="get" autocomplete="on">
             <input
-              class="footer-input"
+              class="footer__input"
               name="email"
               type="email"
               placeholder="E-mail"
             />
-            <button class="footer-submit" type="submit">
+            <button class="footer__submit" type="submit">
               Подписатся
-              <svg class="footer-subscribe-svg" width="24" height="24">
+              <svg class="footer__svg" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-submit"></use>
               </svg>
             </button>
@@ -532,53 +529,53 @@
       </div>
     </footer>
 
-    <!--  ****************** modal window ******************** -->>
+    <!-------------------------------------------  modal window ----------------->>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close class="modal-close-button" type="button">
-          <svg class="modal-close-icon">
+        <button data-modal-close class="modal__btn" type="button">
+          <svg class="modal__icon--close">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
-        <form class="modal-form" action="#">
-          <label class="modal-label"
+        <p class="modal__tittle">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal__form" action="#">
+          <label class="modal__label"
             >Имя
             <input
-              class="modal-input"
+              class="modal__input--data"
               type="text"
               name="name"
               minlength="2"
               required
             />
-            <svg class="icon-modal icon-person">
+            <svg class="modal__icon--data">
               <use href="./images/symbol-defs.svg#icon-person"></use>
             </svg>
           </label>
-          <label class="modal-label"
+          <label class="modal__label"
             >Телефон
-            <input class="modal-input" type="tel" name="tel" required />
-            <svg class="icon-modal icon-phone">
+            <input class="modal__input--data" type="tel" name="tel" required />
+            <svg class="modal__icon--data">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
           </label>
-          <label class="modal-label"
+          <label class="modal__label"
             >Почта
             <input
-              class="modal-input"
+              class="modal__input--data"
               type="email"
               name="email"
               autofocus
               required
             />
-            <svg class="icon-modal icon-email">
+            <svg class="modal__icon--data">
               <use href="./images/symbol-defs.svg#icon-email"></use>
             </svg>
           </label>
-          <label class="modal-label"
+          <label class="modal__label"
             >Коментарий
             <textarea
-              class="modal-textarea"
+              class="modal__textarea"
               name="comment"
               id="comment"
               placeholder="Введите текст"
@@ -586,19 +583,19 @@
               rows="10"
             ></textarea>
           </label>
-          <label class="modal-label modal-label-checbox">
+          <label class="modal__label modal__label--checkbox">
             <input
-              class="modal-checbox visually-hidden"
+              class="modal__input--checkbox visually-hidden"
               type="checkbox"
               name="checbox"
               required
             />
-            <span class="icon-checkbox"></span>
+            <span class="modal__checkbox"></span>
 
             Соглашаюсь с рассылкой и принимаю
-            <a class="modal-Link" href="#">Условия договора</a>
+            <a class="modal__Link" href="#">Условия договора</a>
           </label>
-          <button class="modal-submit-button" type="submit">Отправить</button>
+          <button class="modal__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

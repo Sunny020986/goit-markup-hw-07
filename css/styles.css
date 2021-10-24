@@ -696,32 +696,17 @@ ul {
 
 /**#################### Portfolio page  ############**/
 
-.btn-list {
+.portfolio-btn__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.btn-list .btn-item + .btn-item {
+.portfolio-btn__list :not(:first-child) {
   margin-left: 8px;
 }
 
-.list-price {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  color: var(--secondary-title-color);
-}
-
-.item-price {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  color: var(--primary-text-color);
-}
-
-.portfolio-activ-btn {
+.portfolio__btn--current {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -734,13 +719,13 @@ ul {
   border: none;
 }
 
-.portfolio-activ-btn:hover,
-.portfolio-activ-btn:focus {
+.portfolio__btn--current:hover,
+.portfolio__btn--current:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-btn {
+.portfolio__btn {
   padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
@@ -758,8 +743,8 @@ ul {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio__btn:hover,
+.portfolio__btn:focus {
   cursor: pointer;
   color: var(--secondary-background-color);
   background-color: var(--accent-color);
@@ -767,38 +752,56 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list {
+.portfolio__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-item {
+.portfolio__item {
   font-family: inherit;
   font-weight: 500;
   background: var(--primary-title-color);
   display: flex;
-  /* margin-right: 30px; */
-  /* margin-bottom: 30px; */
 }
 
+.portfolio__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio__item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.portfolio__block--data:hover .portfolio__item,
+.portfolio__block--data:focus .portfolio__item {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* margin-right: 30px; */
+/* margin-bottom: 30px; */
 /* .portfolio-link:nth-child(3n) {
   margin-right: 0px;
 } */
-
 /* .portfolio-link:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 } */
 
-.portfolio-link {
+.portfolio__link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-img-block {
+.portfolio__link:focus,
+.portfolio__link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__block--img {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-link-text {
+.portfolio__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -811,36 +814,30 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:focus .portfolio-link-text,
-.portfolio-link:hover .portfolio-link-text {
+.portfolio__link:focus .portfolio__text,
+.portfolio__link:hover .portfolio__text {
   transform: translateY(0);
 }
 
-.portfolio-link:focus,
-.portfolio-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.portfolio-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-
-.portfolio-block {
+.portfolio__block--data {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.portfolio-block:hover .portfolio-item,
-.portfolio-block:focus .portfolio-item {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  /* background-color: red; */
+.portfolio__price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--secondary-title-color);
+}
+
+.portfolio__term {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--primary-text-color);
 }
 
 /********************  Footer  ********************/

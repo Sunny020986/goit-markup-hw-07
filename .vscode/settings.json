@@ -15,8 +15,5 @@
   "liveSassCompile.settings.generateMap": true,
   "liveServer.settings.port": 1235,
   "liveSassCompile.settings.autoprefix": null
-  //  [
-  //    "> 1%,
-  //    "last 2 vesions
-  //  ]
+  //  ["> 1%, "last 2 vesions"]
 }

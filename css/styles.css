@@ -81,9 +81,6 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-}
-
 .header .container {
   display: flex;
 }

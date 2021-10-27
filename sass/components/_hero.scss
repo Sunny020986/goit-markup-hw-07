@@ -36,12 +36,12 @@
   .hero__btn {
     font-family: inherit;
     font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
     letter-spacing: 0.06em;
     display: inline-block;
     cursor: pointer;
     min-width: 200px;
-    font-size: 16px;
-    line-height: calc(30 / 16);
   
     padding: 10px 32px;
     border-radius: 4px;
@@ -58,5 +58,5 @@
     color: $primary-title-color;
     background-color: $button-background-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
+      }
     }

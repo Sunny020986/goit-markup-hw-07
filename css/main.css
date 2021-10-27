@@ -482,4 +482,45 @@ ul {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+.benefits__list {
+  display: flex;
+}
+
+.benefits__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.benefits__item {
+  width: 270px;
+}
+
+.benefits__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefits__tittle {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.benefits__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
 /*# sourceMappingURL=main.css.map */

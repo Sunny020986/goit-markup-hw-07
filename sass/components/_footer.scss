@@ -12,13 +12,14 @@
     justify-content: flex-start;
     align-items: baseline;
   }
-  
-  // .footer__block{
-  // }
-  
-  .footer__block + .footer__block {
-    margin-left: 60px;
+    
+    .footer__block{
+      & + & {
+      margin-left: 60px;
+    }
   }
+  
+
   
   // .footer__container :not(:last-child) {
   //   margin-right: 60px;

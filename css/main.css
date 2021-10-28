@@ -369,7 +369,6 @@ ul {
 }
 
 .nav-menu__link--current {
-  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -378,6 +377,7 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
+  position: relative;
 }
 
 .nav-menu__link--current::after {

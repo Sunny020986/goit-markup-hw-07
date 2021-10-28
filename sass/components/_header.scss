@@ -23,15 +23,15 @@
   
   .header__logo-span {
     color: $accent-color;
-  }
+    }
   
-  .nav-menu__list {
+    .nav-menu__list {
     margin-left: 92px;
     display: flex;
-  }
   
-  .nav-menu__list :not(:last-child) {
+  :not(:last-child) {
     margin-right: 50px;
+    }
   }
   
   .nav-menu__link {
@@ -53,16 +53,18 @@
 }
   
   .nav-menu__link--current {
-    position: relative;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+
     color: $accent-color;
   
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
+    
+    position: relative;
   }
   
   .nav-menu__link--current::after {

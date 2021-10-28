@@ -1,8 +1,8 @@
 
 .portfolio-btn__list {
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
   }
   
   .portfolio-btn__list :not(:first-child) {
@@ -10,51 +10,50 @@
   }
   
   .portfolio__btn--current {
-    padding: 6px 22px;
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
+    font-family: inherit;
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
+    
+    padding: 6px 22px;
+
     color: $secondary-background-color;
     background-color: $accent-color;
-    border-radius: 4px;
-    border: none;
-  }
-  
-  .portfolio__btn--current:hover,
-  .portfolio__btn--current:focus {
+    &:hover, &:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
   }
-  
+    
   .portfolio__btn {
-    padding: 6px 22px;
-    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26 / 16);
+    font-family: inherit;
     border-radius: 4px;
     border: none;
     cursor: pointer;
   
+    padding: 6px 22px;
+
     color: $secondary-title-color;
     background-color: $secondary-background-color;
   
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   
-  .portfolio__btn:hover,
-  .portfolio__btn:focus {
-    cursor: pointer;
+  &:hover, &:focus {
     color: $secondary-background-color;
     background-color: $accent-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-  
+      }
+    }
+    
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;

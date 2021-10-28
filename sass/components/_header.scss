@@ -65,9 +65,8 @@
     display: block;
     
     position: relative;
-  }
-  
-  .nav-menu__link--current::after {
+    
+  &::after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -77,6 +76,7 @@
     background-color:$accent-color;
     border-radius: 4px;
   }
+}
   
   .nav-contact {
     display: flex;
@@ -114,6 +114,6 @@
   
   .nav-contact__icon {
     margin-right: 10px;
-    fill: currentColor;
+    fill: currentcolor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }

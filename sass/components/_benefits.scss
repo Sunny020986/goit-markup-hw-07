@@ -1,4 +1,13 @@
+.benefits{
+  @extend %section;
+}
+
+.benefits__container{
+  @extend %container;
+}
+
 .benefits__list {
+  @extend %list;
     display: flex;
   }
   

@@ -16,7 +16,8 @@
     background-repeat: no-repeat;
   }
   
-  .hero .container {
+  .hero__container {
+    @extend %container;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -7,6 +7,7 @@
   }
   
   .footer__container {
+    @extend  %container;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -26,6 +27,7 @@
   // } 
   
   .footer__logo {
+    @extend %link;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -41,11 +43,16 @@
     color: $accent-color;
   }
   
-  .footer__list--contact .footer__item:not(:last-child) {
+  .footer__list--contact{
+    @extend %list;
+  } 
+
+  .footer__item:not(:last-child) {
     margin-bottom: 9px;
   }
   
   .footer__address {
+    @extend %link;
     font-size: 14px;
     line-height: calc(24 / 14);
     font-style: normal;
@@ -60,6 +67,7 @@
   }
   
   .footer__contact {
+    @extend %link;
     font-size: 14px;
     line-height: calc(24 / 14);
     font-style: normal;
@@ -82,7 +90,7 @@
   
     color: $secondary-background-color;
   
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: inline-block;
   }
   

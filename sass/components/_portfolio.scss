@@ -1,5 +1,13 @@
+.portfolio{
+  @extend %section;
+}
+
+.portfolio__container{
+  @extend %container;
+}
 
 .portfolio-btn__list {
+  @extend %list;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -55,6 +63,7 @@
     }
     
   .portfolio__list {
+    @extend %list;
     display: flex;
     flex-wrap: wrap;
   }
@@ -90,6 +99,7 @@
   } */
   
   .portfolio__link {
+    @extend %link;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
       &:focus, &:hover {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -114,7 +124,7 @@
     background: rgba(33, 150, 243, 0.9);
     color: $primary-title-color;
 
-    transform: translateY(101%);
+    transform: translateY(102%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
     .portfolio__link:focus &,

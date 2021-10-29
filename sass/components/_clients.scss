@@ -1,4 +1,12 @@
 
+.clients{
+  @extend %section;
+}
+
+.clients__container{
+  @extend %container;
+}
+
 .clients__topic {
   font-weight: bold;
   font-size: 36px;
@@ -12,6 +20,7 @@
   }
   
   .clients__list {
+    @extend %list;
     display: flex;
   }
   

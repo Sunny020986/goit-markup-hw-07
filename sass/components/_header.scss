@@ -3,7 +3,8 @@
     border-bottom: 1px solid #ececec;
   }
   
-  .header .container {
+  .header__container {
+    @extend %container;
     display: flex;
   }
   .nav {
@@ -11,6 +12,7 @@
   }
   
   .header__logo-link {
+    @extend %link;
     font-weight: 700;
     font-family: Raleway;
     font-weight: bold;
@@ -25,7 +27,8 @@
     color: $accent-color;
     }
   
-    .nav-menu__list {
+    .nav-menu__list { 
+      @extend %list;
     margin-left: 92px;
     display: flex;
   
@@ -35,6 +38,7 @@
   }
   
   .nav-menu__link {
+    @extend %link;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -53,6 +57,7 @@
 }
   
   .nav-menu__link--current {
+    @extend %link;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -94,6 +99,7 @@
   }
   
   .nav-contact__link {
+    @extend %link;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);

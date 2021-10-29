@@ -1,7 +1,12 @@
 .team {
+  @extend %section;
     background-color: $secondary-background-color;
   }
   
+  .team__container{
+    @extend %container;
+  }
+
   .team__topic {
     font-weight: bold;
     font-size: 36px;
@@ -14,6 +19,7 @@
   }
   
   .team__list {
+    @extend %list;
     display: flex;
     flex-wrap: wrap;
   }

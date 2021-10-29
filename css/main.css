@@ -280,12 +280,12 @@ ul {
 }
 
 /* убираем подчеркивание */
-.link {
+.header__logo-link, .nav-menu__link, .nav-menu__link--current, .nav-contact__link, .portfolio__link, .footer__logo, .footer__address, .footer__contact {
   text-decoration: none;
 }
 
 /* убираем точки из списка <ul> */
-.list {
+.nav-menu__list, .benefits__list, .activiti__list, .team__list, .clients__list, .portfolio-btn__list, .portfolio__list, .footer__list--contact {
   list-style: none;
 }
 
@@ -303,7 +303,7 @@ ul {
   height: auto;
 }
 
-.container {
+.header__container, .hero__container, .benefits__container, .activiti__container, .team__container, .clients__container, .portfolio__container, .footer__container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -311,7 +311,7 @@ ul {
   padding-right: 15px;
 }
 
-.section {
+.benefits, .team, .clients, .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -320,7 +320,7 @@ ul {
   border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.header__container {
   display: flex;
 }
 
@@ -441,7 +441,7 @@ ul {
   background-repeat: no-repeat;
 }
 
-.hero .container {
+.hero__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -807,7 +807,7 @@ ul {
   position: absolute;
   background: rgba(33, 150, 243, 0.9);
   color: #ffffff;
-  transform: translateY(101%);
+  transform: translateY(102%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -868,7 +868,7 @@ ul {
   color: #2196f3;
 }
 
-.footer__list--contact .footer__item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -903,7 +903,7 @@ ul {
   font-weight: bold;
   text-transform: uppercase;
   color: #f5f4fa;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 
@@ -1165,8 +1165,7 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__button:hover,
-.modal__button:focus {
+.modal__button:hover, .modal__button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

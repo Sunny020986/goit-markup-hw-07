@@ -4,6 +4,10 @@
     background-color: $primary-title-color;
   }
   
+  .activiti__container{
+    @extend %container;
+  }
+
   .activiti__topic {
     font-size: 36px;
     line-height: calc(42 / 36);
@@ -16,6 +20,7 @@
   }
   
   .activiti__list {
+    @extend %list;
     display: flex;
   }
   
@@ -25,6 +30,10 @@
   
   .activiti__block {
     position: relative;
+  }
+  
+  .img{
+    @extend %img;
   }
   
   .activiti__fond {
